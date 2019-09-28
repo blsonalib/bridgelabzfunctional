@@ -1,0 +1,18 @@
+package com.bridgelabz.functional;
+
+import java.util.concurrent.TimeUnit;
+
+public class StopWatch 
+{
+
+	public static void main(String[] args) throws InterruptedException 
+	{
+		long start=System.currentTimeMillis();
+		TimeUnit.SECONDS.sleep(6);
+		long stop=System.currentTimeMillis();
+		
+		long timeElapsed=start-stop;
+		System.out.println("Elapsed time of the stopwatch :"+timeElapsed);
+	}
+
+}

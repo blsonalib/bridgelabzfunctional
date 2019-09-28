@@ -1,0 +1,22 @@
+package com.bridgelabz.functional;
+
+import java.util.Scanner;
+
+import com.bridgelabz.utility.Utility;
+
+public class Gambler 
+{
+
+	public static void main(String[] args) 
+	{
+		int $stake=Integer.parseInt(args[0]);
+		int $goal=Integer.parseInt(args[1]);
+		int number=Integer.parseInt(args[2]);
+		
+		int bet=0;
+		int won=0;
+		int cash=$stake;
+		Utility.Gambler($stake, $goal, number, won, bet, cash);
+	}	
+
+}

@@ -1,0 +1,25 @@
+package javaprograms;
+
+import java.util.Scanner;
+
+public class PowerOf 
+{
+
+	public static void main(String[] args) 
+	{
+		int n;
+		Scanner s=new Scanner(System.in);
+		System.out.println("Enter the number:");
+		n=s.nextInt();
+		System.out.println("power of 2^"+n+"is:"+" "+Math.pow(n, 2));
+		System.out.println();
+		System.out.println();
+		System.out.println("The number is:"+n);
+		for(int i=1;i<=n;i++)
+		{
+			System.out.println("the power of 2^"+Math.pow(2, i));
+		}
+	}
+
+}
+ 

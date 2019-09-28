@@ -1,0 +1,20 @@
+package com.bridgelabz.functional;
+
+import java.util.Scanner;
+
+import com.bridgelabz.utility.Utility;
+
+public class EuclideanDistance 
+{
+
+	public static void main(String[] args) 
+	{
+		Scanner scanner=new Scanner(System.in);
+		int x=scanner.nextInt();
+		int y=scanner.nextInt();
+		double sum1=0,sum2=0,distance=0;
+		Utility.EuclideanDistance(x, y, sum1, sum2, distance);
+					
+	}
+
+}

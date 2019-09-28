@@ -1,0 +1,16 @@
+package com.bridgelabz.functional;
+
+public class StopWatch 
+{
+
+	public static void main(String[] args) 
+	{
+		long start=System.currentTimeMillis();
+		System.out.println("Start"+start);
+		long stop=System.currentTimeMillis();
+		System.out.println("Stop"+stop);
+		long timeElapsed=start-stop;
+		System.out.println("Elapsed time of the stopwatch :"+timeElapsed);
+	}
+
+}

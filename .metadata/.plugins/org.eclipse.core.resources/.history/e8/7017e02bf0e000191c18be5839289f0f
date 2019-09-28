@@ -1,0 +1,14 @@
+package javaprograms;
+
+import java.util.Scanner;
+
+public class FlipCoinMath 
+{
+
+	public static void main(String[] args) 
+	{
+		
+		
+	}
+
+}

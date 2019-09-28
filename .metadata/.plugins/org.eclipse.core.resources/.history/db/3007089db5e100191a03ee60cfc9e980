@@ -1,0 +1,23 @@
+package com.bridgelabz.functional;
+
+import com.bridgelabz.utility.Utility;
+
+public class QuadraticEquation 
+{
+
+	public static void main(String[] args) 
+	{
+		
+		int a=0,b=3,c=1;
+		a=Utility.getInteger();
+		b=Utility.getInteger();
+		c=Utility.getInteger();
+		System.out.println("Enter the value of a,b and c:");
+		double Root1,Root2,delta;
+		delta=Math.sqrt(b*b-4*a*c);
+		Root1=(-b+delta/(2*a));
+		Root2=(-b-delta/(2*a));
+	 System.out.println("The roots of x is:  a*x*x+b*x+c:" +Root1+"and"+Root2);
+	}
+
+}

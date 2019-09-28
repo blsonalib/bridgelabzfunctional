@@ -1,0 +1,16 @@
+package com.bridgelabz.functional;
+
+import java.util.Scanner;
+
+public class LeapYear 
+{
+
+	public static void main(String[] args)
+	{
+		int year;
+		boolean flag=false;
+		Scanner s=new Scanner(System.in);
+		System.out.println("Enter the year:");
+		year=s.nextInt();
+		
+}

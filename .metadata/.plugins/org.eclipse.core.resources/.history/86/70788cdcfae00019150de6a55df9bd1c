@@ -1,0 +1,23 @@
+package OopsConcept;
+class Area
+{
+	void area1(int s)
+	{
+		System.out.println("area of square"+(s*s));
+	}
+	void area1(int h,float l)
+	{
+		System.out.println("area of triangle"+(0.5*h*l));
+	}
+}
+public class overloading 
+{
+
+	public static void main(String[] args) 
+	{
+		Area a=new Area();
+		a.area1(5);
+		a.area1(2, 7);
+	}
+
+}

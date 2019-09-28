@@ -1,0 +1,21 @@
+package com.bridgelabz.functional;
+
+public class EuclideanDistance 
+{
+
+	public static void main(String[] args) 
+	{
+		int x=0;
+		int y=0;
+		double distance1,distance2,sum;
+		distance1=Math.pow(x, 2);
+		distance2=Math.pow(y, 2);
+		sum=distance1+distance2;
+		System.out.println("Distance :"+Math.sqrt(sum));
+		
+				
+		
+		
+	}
+
+}

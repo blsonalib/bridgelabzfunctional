@@ -1,0 +1,24 @@
+package javaprograms;
+
+import java.util.Scanner;
+
+public class HarmonicNumber 
+{
+
+	public static void main(String[] args) 
+	{
+		double val=0.0;
+		Scanner s=new Scanner(System.in);
+		System.out.println("Enter the number:");
+		int n=s.nextInt();
+		while(n>0)
+		{
+			val=val+(double)1/i;
+			System.out.println(+val);
+			n--;
+		}
+		System.out.println(" ");
+		System.out.println("The harmonic series is:"+val);
+	}
+
+}
