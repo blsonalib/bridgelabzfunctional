@@ -1,0 +1,22 @@
+package com.bridgelabz.algorithm;
+
+public class InsersionSort 
+{
+
+	public static void main(String[] args) 
+	{
+		String list[]= {"amita","jiya","priya","babita","kavita"};
+		int n=list.length;
+		System.out.println("Before sorting:");
+		for(int i=0;i<n;i++)
+		{
+			System.out.println(list[i]);
+		}
+		System.out.println(" ");
+		System.out.println("After sorting:");
+		for(int i=0;i<n;i++)
+		{
+			System.out.println(list[i]);
+		}
+	}
+}

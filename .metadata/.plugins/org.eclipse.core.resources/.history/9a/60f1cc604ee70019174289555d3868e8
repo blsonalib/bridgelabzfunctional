@@ -1,0 +1,93 @@
+package com.bridgelabz.algorithm;
+
+import com.bridgelabz.utility.UtilityAlgorithm;
+
+public class PrimePalindromNumber 
+{
+
+	public static void main(String[] args)
+	{
+//		System.out.println("Enter the number:");
+//		int num=UtilityAlgorithm.getInteger();
+//		System.out.println("the number"+num+"palindrom series");
+//		//UtiityAlgorithm.printNumber(primeNumber);
+//		printNumber();
+//		
+//		public static void printNumber(int primeNumber)
+//		{
+//			final int numPerLine=10;
+//			int count=0,number=2;
+//			while(count<primeNumber)
+//			{
+//				if(isPalindrome(number)&&isPrime(number))
+//				{
+//					if(count%numPerLine==0)
+//					{
+//						System.out.println(+number);
+//					}
+//					else
+//						System.out.println(+number);
+//				}
+//				number++;
+//			}
+//		}
+//		public static boolean isPrime(int number)
+//		{
+//			for(int divisor=2;divisor<=number/2;divisor++)
+//			{
+//				if(number%divisor==0)
+//				{
+//					return false;
+//				}
+//			}
+//			return true;
+//		}
+//		public static boolean isPalindrome(int number)
+//		{
+//			int palindrom=number;
+//			int reverse=0;
+//			while(palindrom!=0)
+//			{
+//				int remainder=palindrom%10;
+//				reverse=reverse*10+remainder;
+//				palindrom=palindrom/10;
+//			}
+//			if(number==reverse)
+//			{
+//				return true;
+//			}
+//			else
+//				return false;
+//		}
+//		
+//	System.out.println("Prime Palindrome Number Between 1-1000");
+		 boolean isPrime;
+		 int rem, temp, reversed;
+		 for (int number = 1; number <= 1000; number++) {
+		 isPrime = true;
+		 if (number >= 2) {
+		 for(int i = 2; i <= (number/2) ; i++){
+		 if((number % i) == 0)
+		 isPrime = false;
+		 }
+		 if (isPrime) {
+		 temp = number;
+		 reversed = 0;
+		 while (temp != 0) {
+		 rem = temp % 10;
+		 reversed = (reversed * 10) + rem;
+		 temp /= 10;
+		 }
+		 if (reversed == number) {
+		 System.out.print(number + " ");
+		 }
+		 }
+		 }
+		 }
+		 System.out.println();
+		 } 
+		
+		
+	}
+
+

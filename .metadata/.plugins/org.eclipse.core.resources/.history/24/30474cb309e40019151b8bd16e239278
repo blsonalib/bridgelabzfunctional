@@ -1,0 +1,33 @@
+package com.bridgelabz.algorithm;
+
+import com.bridgelabz.utility.UtilityAlgorithm;
+
+public class TempatureConvert 
+{
+
+	public static void main(String[] args)
+	{
+		double celsius,fahreheit;
+		int choice=UtilityAlgorithm.getInteger();
+		System.out.println("Enter the chiice of tempetature conversion :");
+		switch(choice)
+		{
+		case 1:
+		     double c=UtilityAlgorithm.getFloat();
+		     System.out.println("Enter the temperature in celsius:");
+			 fahreheit=(c*9/5)+32;
+			 System.out.println(+fahreheit);
+			 break;
+		case 2:
+			double f=UtilityAlgorithm.getFloat();
+			 System.out.println("Enter teh temperature i farenheit:");
+			 celsius=(f-32)*5/9;
+			 System.out.println(+celsius);
+			 break;
+		default:
+			System.out.println("Invalid temperature:");
+			break;
+		}
+	}
+
+}

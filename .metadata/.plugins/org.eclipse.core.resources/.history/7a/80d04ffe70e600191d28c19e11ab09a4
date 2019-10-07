@@ -1,0 +1,16 @@
+package com.bridgelabz.algorithm;
+
+import com.bridgelabz.utility.UtilityAlgorithm;
+
+public class SwappingBinary 
+{
+
+	public static void main(String[] args)
+	{
+		int number=100;
+		int newNumber;
+		UtilityAlgorithm.Swapp(45);		
+		
+	}
+
+}

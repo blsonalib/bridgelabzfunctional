@@ -1,0 +1,36 @@
+package com.bridgelabz.functional;
+
+import java.util.Scanner;
+
+import com.bridgelabz.utility.Utility;
+
+public class FlipCoin 
+{
+
+	public static void main(String[] args) 
+	{
+		int heads=0,tails=0;
+		double i=0.0;
+		System.out.println("Toss the coin:");
+		int flips=Utility.getInteger();
+		System.out.println("Number of times coin to be flip:");
+		while(i<=flips)
+		{
+			System.out.println(i+" "+Math.random());
+		if(Math.random()<0.5)
+		{
+			heads++;
+			System.out.println("head");
+		}
+		else
+		{
+			tails++;
+			System.out.println("tail");
+		}
+		i++;
+		}
+		System.out.print("\n");
+		System.out.println("Number of heads"+heads);
+		System.out.println("Number of tails"+tails);
+}
+}

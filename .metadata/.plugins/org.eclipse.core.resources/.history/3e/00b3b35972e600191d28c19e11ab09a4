@@ -1,0 +1,16 @@
+package com.bridgelabz.algorithm;
+
+import com.bridgelabz.utility.UtilityAlgorithm;
+
+public class SwappingBinary 
+{
+
+	public static void main(String[] args)
+	{
+		int newNumber=0;
+		int number=0;
+		UtilityAlgorithm.SwappingBinary(number);;		
+		System.out.println("Swapping"+newNumber);
+	}
+
+}

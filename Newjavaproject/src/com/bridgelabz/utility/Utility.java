@@ -1,5 +1,6 @@
 package com.bridgelabz.utility;
 
+import java.util.InputMismatchException;
 import java.util.Scanner;
 import java.util.concurrent.TimeUnit;
 
@@ -37,27 +38,12 @@ public static void PowerOf(int number,int i)
 		
 	while(i<=number)
 	{
-		System.out.println("the power of 2^"+Math.pow(2, i));//math.pow()method used for power of the number and return double value
+		System.out.println("the power of 2^"+i+"="+Math.pow(2, i));//math.pow()method used for power of the number and return double value
 		i++;
 	}
 
 }
 	
-/* program for string name*/
-public static void StringName(String Username,int length)
-{
-		
-	if(length>=3)  //fetch length of the string
-	{
-		System.out.println("Hello"+" "+Username+",How are you?");
-		
-	}
-	else
-	{
-		System.out.println("Invalid name");
-	}
-		
-}
 
 /*program to print harmonic series*/
 
@@ -66,9 +52,10 @@ public static void HarmonicNumber(float value,int number)
 	while(number>0)
 	{
 		value=value+(float)1/number; //Add the value eg.(1+1/2)
-		System.out.print(value+" ");
+	//System.out.println(value+" ");
 		number--;
 	}
+	System.out.println("Harmonic number="+value);
 }
 
 /* program the year is leap year or not*/
@@ -125,14 +112,158 @@ public static void WindChill(double temperature,double speed,double windchill)
     System.out.println("The effective temperature of the windchill is:"+windchill);
 }
 /*program for Escaped time in stopwatch*/
-public static void StopWatch(int n) throws InterruptedException 
+public static void StopWatch(int n,long start,long stop) throws InterruptedException 
 {
-	long start=System.currentTimeMillis();
+	start=System.currentTimeMillis();
 	for(int i=0;i<=n;i++)
 	{
-		TimeUnit.SECONDS.sleep(2); //duration between start to stop watch
+		TimeUnit.SECONDS.sleep(1); //duration between start to stop watch
 	}
-	long stop=System.currentTimeMillis();
+	stop=System.currentTimeMillis();
     long elapsedTime=stop-start;
 }
+
+
+/* program for 2D array*/
+public static void ArrayOutputStream(int array[][],int row,int column,int i,int j)
+{
+	for(i=0;i<row;i++)
+	{
+		for(j=0;j<column;j++)
+		{
+			System.out.print("Enter the value:");
+			array[i][j]=Utility.getInteger();
+			
+		}
+	}
+	System.out.println("Matrics:");
+	for(i=0;i<row;i++)
+	{
+		for(j=0;j<column;j++)
+		{
+			System.out.print(" "+array[i][j]);
+		}
+		System.out.println();
+	}
 }
+
+/*program for Gambler*/
+public static void Gambler(int $stake,int $goal,int Trials,int bets,int wins)
+{
+	for (int i=0; i< Trials; i++) 
+	{
+		int cash = $stake;
+            
+		while (cash > 0 && cash < $goal)
+		{
+			bets++;
+        
+			if (Math.random() < 0.5) 
+				cash++;     // win $1
+			else                     
+				cash--;     // lose $1
+		}
+            if (cash == $goal) 
+            	wins++;                // to find no. of wins   
+	}
+	System.out.println();
+	System.out.println(wins + " wins of " + Trials);
+	System.out.println("Percent of games won = " + 100.0 * wins /Trials);
+	System.out.println("Avg # bets           = " + 1.0 * bets / Trials);
+}
+
+
+/*program for flip coins*/
+public static void Flipcoin(int flips,double i)
+{
+	double heads=0,tails=0;
+	while(i<=flips)
+	{
+		System.out.println(i+" "+Math.random());//random number between 0 and 1
+		if(Math.random()<0.5)
+		{
+			
+			System.out.println("heads");
+			heads++;
+			//System.out.println("percent of head:"+heads/flips*100);
+		}
+		else
+		{
+			
+			System.out.println("tails");
+			tails++;
+			//System.out.println("percent of tails:"+(tails/flips*100));
+		}
+		i++;
+	}
+		System.out.print("\n");
+		double headpercent=heads*100/flips;
+		System.out.println("percent of heads:"+ headpercent);
+		double tailspercent=100-(headpercent);
+		System.out.println("percent of tails:"+tailspercent);
+
+
+}
+/*program for sum of three integer add to zero*/
+public static void SumOfThreeInteger(int array[]) 
+{
+	for(int i=0;i<array.length;i++)
+	{
+		for(int j=i+1;j<array.length;j++)
+		{
+			for(int k=j+1;j<array.length;k++)
+			{
+				if(array[i]+array[j]+array[k]==0)
+				{
+					System.out.println("Number is found"+array[i]+","+array[j]+"and"+array[j]);
+				}
+			}
+		}
+	}
+
+}
+
+/* program for generate distinct coupon*/
+public static void CouponNumber(int maximum,char[] charecter,StringBuffer stringbuffer,int random)
+{
+	
+	while(random>0)
+	{
+		stringbuffer.append(charecter[random%charecter.length]);//append method append charecter of stringbuffer class
+		random/=charecter.length;//length of the charecter value
+		String couponcode=stringbuffer.toString();
+		System.out.println("coupon code:"+couponcode);
+	}
+	
+	
+}
+
+/*program for sum of three integer is zero*/
+
+public static void TripletsIsZero(int array[],boolean found,int n)
+{
+for(int i=0;i<n-2;i++)
+{
+ for(int j=i+1;j<n-1;j++)
+ {
+	 for(int k=j+1;k<n;k++)
+	 {
+		 	if(array[i]+array[j]+array[k]==0)
+			{
+		 		System.out.print(array[i]+" ");
+		 		System.out.print(" ");
+		 		System.out.print(array[j]+" ");
+		 		System.out.print(" ");
+		 		System.out.print(array[k]+" ");
+		 		System.out.println();
+		 		found =true;
+		 	}
+	 	}
+ 	}
+}
+if(found==false)// the sum of all number the 0 is not found
+	System.out.println("Number not found");
+
+}
+}
+

@@ -1,0 +1,30 @@
+package com.bridgelabz.algorithm;
+
+public class PrimePalindromNumber 
+{
+
+	public static void main(String[] args)
+	{
+		
+		int number, temporary, reverse = 0;
+		int limit=70;
+		System.out.print("Palindrome numbers from 1 to N:");
+		for (int i = 1; i <= limit; i++)
+		{
+			number = i;
+			while (number > 0)
+			{
+				temporary = number % 10;
+				reverse = reverse * 10 + temporary;
+				number = number / 10;
+			}
+			if (reverse == i)
+			{
+				System.out.print(i + " ");
+			}
+			reverse = 0;
+		}
+		
+	}
+
+}

@@ -1,0 +1,41 @@
+package com.bridgelabz.functional;
+
+public class Gambler 
+{
+
+	public static void main(String[] args) 
+	{
+		int $stake=Integer.parseInt(args[0]);
+		int $goal=Integer.parseInt(args[1]);
+		int Trials=Integer.parseInt(args[2]);
+		int bets=0;
+		int wins=0;
+		
+		for(int number=0;number<Trials;number++)
+		{int cash=$stake;
+			while(cash>0&&cash<$goal)
+			{
+				bets++;
+			 
+			 if(Math.random()<0.5)
+			 {
+				 
+				 cash++; //won $1
+			 }
+			 else
+			 {
+				 cash--;//lose $1
+			 }
+			 }
+			 if(cash==0)
+				 wins++;
+			}
+			System.out.println(wins+"Game won"+Trials);
+			System.out.println("percent of win"+100.0*wins/Trials);
+			System.out.println("Average of bets"+1.0*bets/Trials);
+		}
+				
+		
+	}
+
+

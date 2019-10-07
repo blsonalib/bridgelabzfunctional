@@ -1,0 +1,24 @@
+package com.bridgelabz.algorithm;
+
+import com.bridgelabz.utility.UtilityAlgorithm;
+
+public class NewtonMethod 
+{
+
+	public static void main(String[] args) 
+	{
+		double c=0,epsilon=1;
+		int array[]=new int[args.length];
+		for (int i=0;i<array.length;i++)
+		{
+			array[i]=Integer.parseInt(args[i]);
+		}
+		for(int i=0;i<array.length;i++)
+		{
+			double x=Math.sqrt(array[i]);
+			System.out.println(+x);
+			UtilityAlgorithm.sqrt(c, epsilon);
+		}
+	}
+
+}

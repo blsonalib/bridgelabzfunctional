@@ -1,0 +1,19 @@
+package com.bridgelabz.algorithm;
+
+import com.bridgelabz.utility.UtilityAlgorithm;
+
+public class PrimePalindromNumber 
+{
+
+	public static void main(String[] args)
+	{
+		System.out.println("Enter the number:");
+		int num=UtilityAlgorithm.getInteger();
+		System.out.println("the number"+num+"palindrom series");
+		UtiityAlgorith.printNumber()
+		}
+	
+		
+	}
+
+}

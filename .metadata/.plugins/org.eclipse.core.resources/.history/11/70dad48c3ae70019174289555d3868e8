@@ -1,0 +1,27 @@
+package com.bridgelabz.algorithm;
+
+public class MergeSort{
+
+	public static void main(String[] args) {
+		 String[] Array1= { "jiya", "Priya", "Sonali", "Diya", "Chiya", "Man"};
+	        String[] Array2 = { "Mona", "Kirti", "Miya", "Monty", "Zubi" };
+	        String[] names = new String[Array1.length + Array2.length];
+
+	      mergeSort(Array1);
+	        mergeSort(Array2);
+
+	        mergesort(names, Array1, Array2);
+
+	        mergeSort(names);
+	                           //Arrays.sort(names);
+
+	        for (String Array3 : names) {
+	            System.out.println(Array3);
+	        }
+	    }
+
+	   
+
+	}
+
+}

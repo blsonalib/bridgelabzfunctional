@@ -1,0 +1,11 @@
+package com.bridgelabz.algorithm;
+
+public class CallUtilityFunction 
+{
+
+	public static void main(String[] args)
+	{
+		
+	}
+
+}

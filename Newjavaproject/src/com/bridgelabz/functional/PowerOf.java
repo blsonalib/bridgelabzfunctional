@@ -9,10 +9,10 @@ public class PowerOf
 
 	public static void main(String[] args) 
 	{
-		int number,i=1;
-		Scanner scanner=new Scanner(System.in);
+		int number=0,i=2;
+		
 		System.out.println("Enter the number:");
-		number=scanner.nextInt();
+		number=Utility.getInteger();
 		System.out.println("power of 2^"+number+"is:"+Math.pow(number, 2));
 		System.out.println();
 		System.out.println("The number is:"+number);

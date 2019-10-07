@@ -1,0 +1,22 @@
+package com.bridgelabz.algorithm;
+
+import com.bridgelabz.utility.UtilityAlgorithm;
+
+public class SwappingBinary 
+{
+
+	public static void main(String[] args)
+	{
+		int number=45;
+		int newNumber=0;
+//		System.out.println("Before swappin:");
+//		newNumber=UtilityAlgorithm.getInteger();
+//		System.out.println("After swapping:");
+		
+		System.out.println("Before swappin:"+number);
+		System.out.println("After swapping:"+newNumber);
+		UtilityAlgorithm.SwappingBinary(number, newNumber);		
+		
+	}
+
+}

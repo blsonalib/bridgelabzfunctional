@@ -1,0 +1,33 @@
+package com.bridgelabz.functional;
+
+import java.util.Scanner;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+//import com.bridgelabz.utility.Utility;
+
+public class StringName
+{
+
+	public static void main(String[] args)
+	{
+		String name;
+		String Username=null;
+		String st;
+		Scanner scan=new Scanner(System.in);
+	    System.out.println("Enter the name:");
+		name=scan.next();
+     	 
+         Pattern pattern=Pattern.compile("[A-Z][a-z],{3,20}");
+         Matcher matcher=pattern.matcher(name);
+         System.out.println("Hello "+Username+"How are you?");
+         if(matcher.matches())
+         {
+        	 st=name.replaceAll("<<Username>>", name);
+        	// System.out.println("Hello"<<Username>>"How are you?");
+         }
+         else
+         {
+        	 System.out.println("User should get more than 3 charecter");
+         }}}
+         

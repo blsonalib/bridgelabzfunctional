@@ -1,0 +1,48 @@
+package com.bridgelabz.algorithm;
+
+import com.bridgelabz.utility.UtilityAlgorithm;
+
+public class PrimePalindromNumber 
+{
+
+	public static void main(String[] args)
+	{
+          
+	     System.out.println("Enter the Nth number:");
+	     int num=UtilityAlgorithm.getInteger();
+		 boolean flag;
+		 int rem, temp, reversed;
+		 for (int number = 1; number <= num; number++) 
+		 {
+		 flag = true;
+		 if (number >= 2) {
+		 for(int i = 2; i <= (number/2) ; i++)
+		 {
+		 if((number % i) == 0)
+		 flag= false;
+		 }
+		 if (flag) 
+		 {
+		 temp = number;
+		 reversed = 0;
+		 while (temp != 0) 
+		 {
+		 rem = temp % 10;
+		 reversed = (reversed * 10) + rem;
+		 temp /= 10;
+		 }
+		 if (reversed == number) 
+		 {
+		 System.out.print(number + " ");
+	 }
+		
+		 }
+		 }
+		 }
+		 System.out.println();
+		 } 
+		
+		
+	}
+
+

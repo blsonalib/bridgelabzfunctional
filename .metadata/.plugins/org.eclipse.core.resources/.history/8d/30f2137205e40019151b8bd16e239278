@@ -1,0 +1,23 @@
+package com.bridgelabz.algorithm;
+
+import com.bridgelabz.utility.UtilityAlgorithm;
+
+public class TemperatureConversion 
+{
+	static float Conversion(float fahrenheit)
+	{
+		return ((fahrenheit-32)*5/9);
+		
+	}
+	
+	public static void main(String[] args)
+	{
+		float celsius;
+		float temperature=UtilityAlgorithm.getFloat();
+		System.out.println("Enter the temperatur:");
+		
+		celsius=TemperatureConversion.Conversion(66); 
+		System.out.println("Temperature in celcius:"+celsius);
+	}
+
+}

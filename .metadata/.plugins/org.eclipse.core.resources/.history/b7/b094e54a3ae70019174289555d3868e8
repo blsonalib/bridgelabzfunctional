@@ -1,0 +1,57 @@
+package com.bridgelabz.algorithm;
+
+public class MergeSort{
+
+	public static void main(String[] args) {
+		 String[] Array1= { "jiya", "Priya", "Sonali", "Diya", "Chiya", "Man"};
+	        String[] Array2 = { "Mona", "Kirti", "Miya", "Monty", "Zubi" };
+	        String[] names = new String[Array1.length + Array2.length];
+
+	        mergeSort(Array1);
+	        mergeSort(Array2);
+
+	        mergesort(names, Array1, Array2);
+
+	        mergeSort(names);
+	        //Arrays.sort(names);
+
+	        for (String Array3 : names) {
+	            System.out.println(Array3);
+	        }
+	    }
+
+	    public static void mergeSort(String[] names) {
+	        if (names.length > 2) {
+	            String[] left = new String[names.length / 2];
+	            String[] right = new String[names.length - names.length / 2];
+
+	            for (int i = 0; i < left.length; i++) {
+	                left[i] = names[i];
+	            }
+
+	            for (int i = 0; i < right.length; i++) {
+	                right[i] = names[i + names.length / 2];
+	            }
+
+	            mergeSort(left);
+	            mergeSort(right);
+	            mergesort(names, left, right);
+	        }
+	    }
+
+	    public static void mergesort(String[] names, String[] left, String[] right) {
+	        int a = 0;
+	        int b = 0;
+	        for (int i = 0; i < names.length; i++) {
+	            if (b >= right.length || (a < left.length && left[a].compareToIgnoreCase(right[b]) < 0)) {
+	                names[i] = left[a];
+	                a++;
+	            } else {
+	                names[i] = right[b];
+	                b++;
+	            }
+	        }
+
+	}
+
+}

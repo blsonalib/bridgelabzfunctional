@@ -1,0 +1,18 @@
+package com.bridgelabz.algorithm;
+
+public class MonthlyPayment 
+{
+
+	public static void main(String[] args) 
+	{
+		int principle=Integer.parseInt(args[0]);
+		int year=Integer.parseInt(args[1]);
+		int rateOfInterest=Integer.parseInt(args[2]);
+		float payment;
+		int timePeriod;
+		int rate,numberOfYears;
+		
+		
+	}
+
+}

@@ -1,0 +1,18 @@
+package com.bridgelabz.algorithm;
+
+import com.bridgelabz.utility.UtilityAlgorithm;
+
+public class VendingMachine 
+{
+
+	public static void main(String[] args) 
+	{
+		
+		 int notes[]= {1,10,20,40,50,400};
+		 int total=0;
+		 int money=600;
+		UtilityAlgorithm.Calculate(money, notes);
+		System.out.println(+total);
+	}
+
+}

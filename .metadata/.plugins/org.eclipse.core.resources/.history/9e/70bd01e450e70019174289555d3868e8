@@ -1,0 +1,18 @@
+package com.bridgelabz.algorithm;
+
+import com.bridgelabz.utility.UtilityAlgorithm;
+
+public class PrimePalindrom 
+{
+
+	public static void main(String[] args)
+	{
+		int number,reverseNumber=0,lastDigit=0,temporary;
+		boolean flag=false;
+		System.out.println("Enter the number of value:");
+		number=UtilityAlgorithm.getInteger();
+		temporary=number;
+		UtilityAlgorithm.PrimePalindrom(number, lastDigit, reverseNumber, temporary, flag);
+	}
+
+}

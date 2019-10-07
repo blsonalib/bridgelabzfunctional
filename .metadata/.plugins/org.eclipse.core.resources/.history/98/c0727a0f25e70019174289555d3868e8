@@ -1,0 +1,33 @@
+package com.bridgelabz.algorithm;
+
+import java.util.Arrays;
+
+import com.bridgelabz.utility.UtilityAlgorithm;
+
+public class InsersionSort 
+{
+
+	public static void main(String[] args) 
+	{
+		int i=0,j;
+		String key=null;
+		String array[] ={"sona","anna","jiya","kiya","priya"};
+		System.out.println(Arrays.toString(array));
+		for(j=1;j<array.length;j++)
+		{
+			key=array[j];
+			i=j-1;
+			while(i>=0)
+			{
+				if(key.compareTo(array[i])>0)
+				{
+					break;
+				}
+			}
+			array[i+1]=array[i];
+			i--;
+		}
+		array[i+1]=key;
+		System.out.println(Arrays.toString(array));
+	}
+}

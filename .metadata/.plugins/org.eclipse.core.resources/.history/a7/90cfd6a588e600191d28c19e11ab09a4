@@ -1,0 +1,18 @@
+package com.bridgelabz.algorithm;
+
+import com.bridgelabz.utility.UtilityAlgorithm;
+
+public class DayOfWeek
+{
+
+	public static void main(String[] args)
+    {
+		int days=Integer.parseInt(args[0]);
+		int month=Integer.parseInt(args[1]);
+		int year=Integer.parseInt(args[2]);
+		int num;
+		boolean flag=true;
+		UtilityAlgorithm.DayOfWeek(month, year, days, flag,num);
+	}
+
+}

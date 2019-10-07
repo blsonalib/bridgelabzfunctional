@@ -1,0 +1,39 @@
+package com.bridgelabz.algorithm;
+
+import com.bridgelabz.utility.UtilityAlgorithm;
+
+public class InsersionSort 
+{
+
+	public static void main(String[] args) 
+	{
+		int size;
+		int i,j;
+		String temp="";
+		String array[]= {"prema","sona","ravi","jay","mina"};
+		
+		System.out.println("Eneter the size of the string:");
+		size=UtilityAlgorithm.getInteger();
+		System.out.println("Enter the element:");
+		for(i=0;i<size;i++)
+		{
+			array[i]=UtilityAlgorithm.getString();
+		}
+		for(i=1;i<size;i++)
+		{
+			temp=array[i];
+			j=i-1;
+			while((temp!=array[j])&&(j>=0))
+			{
+				array[j+i]=array[j];
+				j=j-1;
+			}
+		
+		array[j+i]=temp;
+	}
+for(i=0;i<size;i++)
+{
+	System.out.println(array[i]+" ");
+}
+	}
+}

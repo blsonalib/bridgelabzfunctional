@@ -1,0 +1,11 @@
+package com.bridgelabz.algorithm;
+
+public class SwapNibbles 
+{
+
+	public static void main(String[] args)
+	{
+		
+	}
+
+}

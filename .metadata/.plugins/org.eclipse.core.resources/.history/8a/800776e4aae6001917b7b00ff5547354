@@ -1,0 +1,18 @@
+package com.bridgelabz.algorithm;
+
+import com.bridgelabz.utility.UtilityAlgorithm;
+
+public class SwapNibbles 
+{
+
+	public static void main(String[] args)
+	{
+		int x=200;
+		int swap=0;
+		System.out.println("swapping");
+		
+		System.out.println(+swap);
+		UtilityAlgorithm.SwapNibbles(x,swap);
+	}
+
+}

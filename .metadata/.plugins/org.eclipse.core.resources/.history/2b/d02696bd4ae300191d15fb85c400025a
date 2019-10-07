@@ -1,0 +1,59 @@
+package com.bridgelabz.algorithm;
+
+import com.bridgelabz.utility.Utility;
+
+public class AnagramDetection
+{
+
+	public static void main(String[] args) 
+	{
+		String string1,string2;
+		int length,i,j,found=0,notfound=0;
+		
+		System.out.println("Enter the first string:");
+		
+		System.out.println("Enter the second string:");
+		
+		int length1=string1.length();
+		int length2=string2.length();
+		if(length1==length2)
+		{
+			length=length1;
+			for(i=0;i<length;i++)
+			{
+				found=0;
+				for(j=0;j<length;j++)
+				{
+					if(string1.charAt(i)==string2.charAt(j))
+					{
+						found=1;
+						break;
+						
+					}
+				}
+				if(found==0)
+				{
+					notfound=1;
+					break;
+				}
+			}
+			if(notfound==1)
+			{
+				System.out.println("String are not Anagram");
+			}
+			else
+			{
+				System.out.println("String are Anagram");
+			}
+
+		}
+		
+		else
+		{
+			System.out.println("string1 and string2 have number of characters this are angram strings ");
+		}
+		
+		
+	}
+
+}

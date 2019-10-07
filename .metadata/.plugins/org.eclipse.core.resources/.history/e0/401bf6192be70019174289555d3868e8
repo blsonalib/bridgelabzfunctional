@@ -1,0 +1,10 @@
+package com.bridgelabz.functional;
+
+public class StringOpt {
+
+	public static void main(StringOpt[] args) {
+		// TODO Auto-generated method stub
+		StringOpt s1="Hi";
+	}
+
+}

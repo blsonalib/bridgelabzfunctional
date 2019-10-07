@@ -1,0 +1,30 @@
+package com.bridgelabz.functional;
+
+
+import java.util.Array;
+import java.util.InputMismatchException;
+
+import com.bridgelabz.utility.Utility;
+
+public class TicTacToegame 
+{
+	static int in;
+	static String board[];
+	static String turn;
+	
+	public static void main(String[] args)
+	{
+		
+		in=Utility.getInteger();
+		board=new String[9];
+		turn="x";
+		String winner=null;
+		populateEmptyBoard();
+		System.out.println("Welcome to tic tac toe:");
+		System.out.println("............");
+		printBoard();
+		System.out.println("x eill play first.Enter a slot number to print x in:");
+		
+	}
+
+}
