@@ -19,13 +19,11 @@ public class StackProgram
 		      if(expression == null || expression.length() == 0)
 		      {
 		           return false;
-		      } 
-		      else 
+		      } else 
 		      {    
 		        for(int i = 0; i < expression.length(); i++){
 		 
-		          if (expression.charAt(i) == '(' || expression.charAt(i) == '(' ) 
-		          {
+		          if (expression.charAt(i) == '(' || expression.charAt(i) == '(' ) {
 		        		stack.push(expression.charAt(i));
 		          } 
 		          else if(expression.charAt(i) == ')')
@@ -33,19 +31,16 @@ public class StackProgram
 			      if(!stack.isEmpty() && stack.peek() == '(')
 			      {
 			            stack.pop();
-			        }
-			      else
+			        }else
 			        {
 			            return false;
 			       }
-		          } 
-		          else if (expression.charAt(i) == ')') 
+		          } else if (expression.charAt(i) == ')') 
 		          {
 		               if(!stack.isEmpty() && stack.peek() == '(') 
 		               {
 		                  stack.pop();
-		              } 
-		               else 
+		              } else 
 		              {
 		                  return false;
 		              }
@@ -55,8 +50,7 @@ public class StackProgram
 		              if(!stack.isEmpty() && stack.peek() == '(') 
 		              {
 		                  stack.pop();
-		              }
-		              else 
+		              } else 
 		              {
 		                  return false;
 		              }
@@ -67,8 +61,7 @@ public class StackProgram
 		        if(stack.isEmpty()) 
 		        {
 		            return true;
-		        } 
-		        else
+		        } else
 		        {
 		            return false;
 		        }
