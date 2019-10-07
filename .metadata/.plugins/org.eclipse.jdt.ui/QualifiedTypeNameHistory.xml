@@ -11,6 +11,6 @@
     <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="java.util.regex.Pattern"/>
     <fullyQualifiedTypeName name="java.util.regex.Matcher"/>
-    <fullyQualifiedTypeName name="com.bridgelabz.utility.UtilityAlgorithm"/>
     <fullyQualifiedTypeName name="java.util.Arrays"/>
+    <fullyQualifiedTypeName name="com.bridgelabz.utility.UtilityAlgorithm"/>
 </qualifiedTypeNameHistroy>

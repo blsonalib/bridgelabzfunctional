@@ -64,16 +64,8 @@ public class UtilityData
 			          }
 			        }
 			 
-			        // if stack is empty finally , it means symbol is balance in expression
-			        if(stack.isEmpty()) 
-			        {
-			            return true;
-			        } 
-			        else
-			        {
-			            return false;
-			        }
 	
-			      }}}}
+	
+			      }}
 		
 			
