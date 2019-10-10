@@ -1,0 +1,46 @@
+package com.bridgelabz.datastructure;
+
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.util.LinkedList;
+
+public class UnOrderedList 
+{
+
+	public static void main(String[] args) 
+	{
+		ListUtility utility=new ListUtility();
+		String line=" ";
+		String words[]=new String[4];
+		int count =0;
+		FileReader fileReader=new FileReader("/home/userq/text.java.txt");
+		BufferedReader bufferedReader=new BufferedReader(fileReader);
+		while((line=bufferedReader.readLine())!=null)
+		{
+			words=line.split(" ");
+			count=count+words.length;
+			
+		}
+		System.out.println("------words present in file-------");
+		LinkedList linkedList=new LinkedList();
+		for(int i=0;i<words.length;i++)
+		{
+			String str=words[i];
+			linkedList.insert(str);
+		}
+		LinkedList.show();
+		boolean flag=false;
+		int size=linkedList.size();
+		System.out.println("size of linked list:"+size);
+		System.out.println("Enter elemrnt which you want:");
+		String element=Utility.stingvalue();
+		boolean flag1=linkedList.searchNode(element);
+		if(flag==false)
+		{
+			System.out.println("Element not found");
+			linkedList.writeonfile();
+			
+		}
+	}
+
+}

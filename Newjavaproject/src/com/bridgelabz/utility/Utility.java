@@ -176,7 +176,7 @@ public static void Gambler(int $stake,int $goal,int Trials,int bets,int wins)
 /*program for flip coins*/
 public static void Flipcoin(int flips,double i)
 {
-	double heads=0,tails=0;
+	double heads=0.0,tails=0.0;
 	while(i<=flips)
 	{
 		System.out.println(i+" "+Math.random());//random number between 0 and 1
@@ -197,7 +197,7 @@ public static void Flipcoin(int flips,double i)
 		i++;
 	}
 		System.out.print("\n");
-		double headpercent=heads*100/flips;
+		double headpercent=(heads/flips)*100;
 		System.out.println("percent of heads:"+ headpercent);
 		double tailspercent=100-(headpercent);
 		System.out.println("percent of tails:"+tailspercent);

@@ -182,21 +182,22 @@ public static boolean LeapYear(int year)
 		    int	x = y0 + (y0/ 4) - (y0 /100) + (y0/400);
 		    int	m0 = month + 12* ((14 - month) / 12) - 2;
 		    int	d0 = (day + x + 31* m0/12)%7;
+		    System.out.println(d0);
 		    switch(d0)
 		    {
+		    case 0 : System.out.println("its sunday");
+		    		  break;
 		    case 1 : System.out.println("its monday");
 		    		  break;
 		    case 2 : System.out.println("its tuesday");
-		    		  break;
-		    case 3 : System.out.println("its wednesday");
 			    	  break;
-		    case 4 : System.out.println("its thursday");
+		    case 3 : System.out.println("its wednesday");
+			  		  break;
+		    case 4 : System.out.println("its thusday");
 			  		  break;
 		    case 5 : System.out.println("its friday");
 			  		  break;
 		    case 6 : System.out.println("its saturday");
-			  		  break;
-		    case 0 : System.out.println("its sunday");
 			          break;
 		}
 		   

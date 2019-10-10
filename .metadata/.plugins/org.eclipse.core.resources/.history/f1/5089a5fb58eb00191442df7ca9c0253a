@@ -1,0 +1,41 @@
+package com.bridgelabz.utility;
+
+import java.util.Scanner;
+
+public class UtilityD 
+{
+	public static Scanner scanner=new Scanner(System.in);
+	public static String getString()
+	{
+		return  scanner.next();
+	}
+	
+	public static int[][] PrimeNumberArray(int array[][],int num,boolean st)
+	{ 
+		while(num < 1000)
+	{
+	if(num == 1 || num == 2)
+	{
+		num ++;
+		continue;
+	}
+	for(int i = 2; i < num  ; i++)
+	{
+		if(num % i == 0)
+		{   
+			st = false;
+			break;	
+		}	
+	}	
+	if(st) 
+	{
+		int k = num / 100;
+		int j = num % 100;
+		array[k][j] = num;
+	}
+	num ++;
+}
+return array;
+
+}
+}

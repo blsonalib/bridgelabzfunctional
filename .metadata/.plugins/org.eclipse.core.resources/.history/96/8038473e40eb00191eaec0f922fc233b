@@ -1,0 +1,44 @@
+package com.bridgelabz.utility;
+
+import java.util.Scanner;
+
+public class UtilityD 
+{
+	public static Scanner scanner=new Scanner(System.in);
+	public static String getString()
+	{
+		return  scanner.next();
+	}
+	public static int[][] isPrime()
+	{
+		int num = 1;			
+		int[][] array = new int[10][100];
+		int j = 1;
+		int k = 0;		
+		while(num < 1000)
+		{
+			boolean st = true;
+			if(num == 1 || num == 2)
+			{
+				num ++;
+				continue;
+			}
+			for(int i = 2; i < num  ; i++)
+			{
+				if(num % i == 0)
+				{   
+					st = false;
+					break;	
+				}	
+			}	
+			if(st) 
+			{
+				k = num / 100;
+				j = num % 100;
+				array[k][j] = num;
+			}
+			num ++;
+		}
+		return array;
+
+}

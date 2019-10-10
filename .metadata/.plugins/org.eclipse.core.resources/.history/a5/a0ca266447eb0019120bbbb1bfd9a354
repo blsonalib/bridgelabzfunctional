@@ -1,0 +1,18 @@
+package com.bridgelabz.datastructure;
+
+public class Node 
+{
+	private int data;
+	private Node Next;
+	public Node() //default constructor
+   {
+	 data=0;
+	 Next=null;
+   }
+	public Node(int d,Node n)//paramaterise constructor
+	{
+		data=d;
+		Next=n;
+	}
+	
+	}

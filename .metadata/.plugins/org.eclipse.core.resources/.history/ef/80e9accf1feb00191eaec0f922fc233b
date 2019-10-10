@@ -1,0 +1,47 @@
+package com.bridgelabz.datastructure;
+
+import java.util.Scanner;
+
+public class PrimeNumberArray 
+{
+
+	public static void main(String[] args)
+	{
+		// TODO Auto-generated method stub
+		 int rows;
+         int cols;
+
+         Scanner sc = new Scanner(System.in);
+
+         System.out.println("Enter number of row");
+         rows = sc.nextInt();
+         System.out.println("Enter number of column");
+         cols = sc.nextInt();
+
+         int[][] matrix = new int[rows][cols];
+
+         int[] array = new int[rows];
+
+         System.out.println("Enter numbers in the matrix");
+
+         for (int i = 0; i < matrix.length; i++) {
+             for (int j = 0; j < matrix.length; j++) {
+
+                 if(matrix[i][j] % matrix[i][j] ==0 && matrix[i][j] %1 == 0){
+////here i am stuck can anyone help me ??
+                     //array[i*j];
+                 }
+                 matrix[i][j] = sc.nextInt();
+             }
+         }
+
+         for(int row = 0 ;row<matrix.length; row++){
+             for(int col = 0 ; col< matrix.length; col++){
+
+                 System.out.print(matrix[row][col] + " ");
+             }
+             System.out.println();
+         }
+	}
+
+}

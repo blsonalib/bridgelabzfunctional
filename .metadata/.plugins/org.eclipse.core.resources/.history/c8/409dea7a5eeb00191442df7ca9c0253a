@@ -1,0 +1,44 @@
+package com.bridgelabz.utility;
+
+import java.util.Scanner;
+
+public class UtilityD 
+{
+	public static Scanner scanner=new Scanner(System.in);
+	public static String getString()
+	{
+		return  scanner.next();
+	}
+	 public static String StringValue() 
+	 {
+		 String string=scanner.nextLine();
+		 return string;
+	 }
+	public static int IntegerValue() 
+	{
+		int integer=scanner.nextInt();
+		return integer;
+	}
+	public static double DoubleValue()
+	{
+		double Double=scanner.nextDouble();
+		return Double;
+	}
+	/*for prime number 0-1000*/
+	public static boolean primeNumberArray(int number)
+	{
+		if (number == 0 || number == 1) 
+		{
+			return false;
+		}
+		for (int i = 2; i < number; i++) 
+		{
+			if (number % i == 0)
+			{
+				return false;
+			}
+		}
+		return true;
+		
+	}
+	}

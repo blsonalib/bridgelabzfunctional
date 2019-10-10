@@ -1,0 +1,117 @@
+package com.bridgelabz.datastructure;
+
+public class Node<T> {
+	private Node head;
+	Node tail;
+	private int size = 0;
+	private Object next;
+	private Object data;
+
+	@SuppressWarnings("Unchecked")
+
+	/**
+	 * function to add a new item in the list and returns nothing
+	 * 
+	 * @param data the item which to be added
+	 */
+	public void add(T data) {
+		/*
+		 * creates an new node with data traverse list till last adds the node as the
+		 * last node
+		 */
+		Node n = new Node();
+		if (head == null) {
+			head = n;
+			size++;
+		} else 
+		{
+			Node node = head;
+			while (node.next != null) {
+				node = (Node) node.next;
+			}
+			// adds the node as last node
+			node.next = n;
+			size++;
+		}
+	}
+
+	/**
+	 * Function to remove the item from the list
+	 * 
+	 * @param item
+	 */
+	public void remove(T item) {
+		Node n = head;
+		Node prev = null;
+		if (head.data.equals(item)) {
+			head = (Node) head.next;
+			size -= 1;
+			return;
+		}
+		while (!n.data.equals(item)) {
+			prev = n;
+			n = (Node) n.next;
+		}
+		n = (Node) n.next;
+		prev.next = n;
+		n = null;
+		size -= 1;
+	}
+
+	public void removeAtLast() {
+		Node n = head;
+		Node prev = null;
+		while (n.next != null) {
+			prev = n;
+			n = (Node) n.next;
+		}
+		System.out.println("hheeyy");
+		// remove the node as last node
+		prev.next = null;
+		size--;
+	}
+
+	/**
+	 * function to search the item in the list
+	 * 
+	 * @param item the item to be searched
+	 * @return true if found and false if not found
+	 */
+	public boolean search(T item) {
+		Node n = head;
+		while (n.next != null) {
+			if (n.data.equals(item)) {
+				return true;
+			}
+			n = n.next;
+		}
+		return false;
+	}
+
+	/**
+	 * function to check if the list is empty or not
+	 * 
+	 * @return true if empty and false if not empty
+	 */
+	public boolean isEmpty() {
+		if (head == null) {
+			return true;
+		}
+		return false;
+	}
+
+	/**
+	 * Funtion to check the size of list and return it
+	 * 
+	 * @return the size of the list
+	 */
+	public int size() {
+		return size;
+	}
+
+	/**
+
+
+	}
+
+}
